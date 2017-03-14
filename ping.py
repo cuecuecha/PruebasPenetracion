@@ -1,9 +1,16 @@
 #!usr/bin/python
+#Hernandez Cuecuecha Jorge Alberto
+#Script que recibe como parametro una ip o dominio y a traves de un ping
+# este te dice con el parametro ttl el sistema operativo
+
+#Uso python ping.py 8.8.8.8
+
 import sys,subprocess
 import os
+if len(sys.argv) != 2:
+        sys.exit("python ping.py ip")
 ip=sys.argv[1]
 command = "ping -c 1 " + ip
-#process = subprocess.check_output(command,stdout=subprocess.PIPE,stderr=None,shell=True)
 process = subprocess.check_output(command,shell=True)
 #salida = process.communicate()
 #print salida[0]

@@ -1,4 +1,10 @@
 #!/usr/bin/lua
+--Hernández Cuecuecha Jorge Alberto
+--Requerimientos
+--	apt-get install luarocks 
+--	apt-get install lua-socket
+-- Uso
+--	lua5.3 enumeracion.lua
 local socket = require("socket")
 print("Ingresa la ip: ")
 local ip = io.read()

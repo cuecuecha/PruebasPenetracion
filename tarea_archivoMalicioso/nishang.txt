@@ -1,0 +1,3 @@
+Comando a utilizar
+Out-Word -PayloadScript C:\Users\JorgeAlberto\Documents\nishang\nishang\puerto.ps1
+
